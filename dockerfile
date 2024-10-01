@@ -20,4 +20,4 @@ ENV FLASK_ENV=production
 EXPOSE 80
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
