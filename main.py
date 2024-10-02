@@ -108,6 +108,7 @@ def callback():
     }
     
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+    print(DISCORD_TOKEN_URL)
     token_response = requests.post(DISCORD_TOKEN_URL, data=data, headers=headers)
     access_token = token_response.json().get('access_token')
     
