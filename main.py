@@ -141,6 +141,7 @@ def callback():
 
     # Run the Fortigate object creation in a background thread
     executor.submit(create_fortigate_object, address_payload, fortigate_headers)
+    logging.info(f"FORTIGATE_CAPTIVE_URL={FORTIGATE_CAPTIVE_URL}, original_uri={original_uri}, magic={magic}, username={username}")
 
     return render_template_string("""
     <html>
