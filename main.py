@@ -16,7 +16,7 @@ app.secret_key = os.getenv('FLASK_SECRET_KEY')  # Required
 FORITGATE_IP = os.getenv('FORITGATE_IP')  # Required
 FORTIGATE_API_KEY = os.getenv('FORTIGATE_API_KEY')  # Required
 FORTIGATE_API_URL = f'https://{FORITGATE_IP}/api/v2/cmdb/firewall/address/'
-FORTIGATE_CAPTIVE_URL = os.getenv('FORIGATE_CAPTIVE_URL')  # Required
+FORTIGATE_CAPTIVE_URL = os.getenv('FORTIGATE_CAPTIVE_URL')  # Required
 
 # Discord configuration
 DISCORD_CLIENT_ID = os.getenv('DISCORD_CLIENT_ID')  # Required
