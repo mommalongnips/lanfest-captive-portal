@@ -108,8 +108,7 @@ def callback():
     }
     
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-    print(DISCORD_TOKEN_URL)
-    token_response = requests.post(DISCORD_TOKEN_URL, data=data, headers=headers)
+    token_response = requests.post("https://discord.com/api/oauth2/token", data=data, headers=headers)
     access_token = token_response.json().get('access_token')
     
     user_headers = {"Authorization": f"Bearer {access_token}"}
